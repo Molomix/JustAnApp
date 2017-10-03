@@ -1,16 +1,13 @@
 language: node_js
 node_js : 
  - 8.4.0
-sudo: false
+sudo: true
+dist: trusty
 env: 
  - DISPLAY=':99.0'
- - dist: trusty
- addons:
-   - apt:
-	- sources:
-            - google-chrome
-        - packages:
-	    - google-chrome-stable
+install : 
+  - "sudo apt install google-chrome"
+  - "sudo apt install google-chrome-stable"
 script:
  - "mocha testMocha/*.js"
 
