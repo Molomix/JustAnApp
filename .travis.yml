@@ -19,8 +19,6 @@ addons:
 install : 
   - "npm install selenium-server-standalone"
   - "sudo apt install google-chrome-stable"
-before_script : 
-  - "java -jar selenium-server-standalone-2.53.1.jar"
 script:
  - "mocha testMocha/*.js"
 
