@@ -1,7 +1,19 @@
 var assert = require('assert'),
 test = require('selenium-webdriver/testing'),
-webdriver = require('selenium-webdriver');
+webdriver = require('selenium-webdriver'), until = webdriver.until, by = webdriver.by,
+chrome = require('selenium-webdriver/chrome'),
+chromedriver = require('chromedriver'), firefoxdriver = require('geckodriver');
  
+test.describe('Including driver',function(){
+   test.it('Chrome', function(){
+	assert.notEqual(chrome,null,'chrome from selenium is null');
+	assert.notEqual(chromedriver,null,'chromedriver is null');
+   });
+   test.it('Firefox',function(){
+	assert.notEqual(firefoxdriver,null,'firefox driver is null');
+   });
+});
+
 test.describe('Google Search', function() {
   this.timeout(20000);
   test.it('should work', function() {
