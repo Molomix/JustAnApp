@@ -6,7 +6,6 @@ dist: trusty
 env: 
  - DISPLAY=':99.0'
 install : 
-  - "sudo apt install google-chrome"
   - "sudo apt install google-chrome-stable"
 script:
  - "mocha testMocha/*.js"
