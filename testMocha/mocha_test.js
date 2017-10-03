@@ -1,6 +1,6 @@
 var assert = require('assert'),
-test = require('selenium-webdriver/testing'),
-webdriver = require('selenium-webdriver'), until = webdriver.until, by = webdriver.by,
+test = require('selenium-webdriver/testing'), driver,
+webdriver = require('selenium-webdriver'), until = webdriver.until, by = webdriver.By,
 chrome = require('selenium-webdriver/chrome'),
 chromedriver = require('chromedriver'), firefoxdriver = require('geckodriver');
  
@@ -11,6 +11,10 @@ test.describe('Including driver',function(){
    });
    test.it('Firefox',function(){
 	assert.notEqual(firefoxdriver,null,'firefox driver is null');
+   });
+   test.it('Init driver',function()
+   {
+    driver = new webdriver.Builder().forBrowser('Chrome').build();
    });
 });
 
