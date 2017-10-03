@@ -4,5 +4,7 @@ node_js :
 before_script:
  - "npm install"
  - "npm install selenium-webdriver"
+ - "npm install chromedriver"
+ - "npm install geckodriver"
 script:
  - "node test/*.js"
