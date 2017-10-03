@@ -8,6 +8,7 @@ cache:
     - "node_modules"
 env: 
  - DISPLAY=':99.0'
+ - SELENIUM_REMOTE_URL='http://localhost:4444/wd/hub'
 addons:
   firefox: latest
   apt:
@@ -18,8 +19,6 @@ addons:
 install : 
   - "npm install selenium-server-standalone"
   - "sudo apt install google-chrome-stable"
-before_script:
-  - "export $SELENIUM_REMOTE_URL=http://localhost:4444/wd/hub"
 script:
  - "mocha testMocha/*.js"
 
