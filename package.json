@@ -1,0 +1,20 @@
+{
+  "name": "testtravis",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/*.js"
+  },
+  "repository": {},
+  "keywords": [],
+  "author": "Molomix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Molomix/JustAnApp/issues"
+  },
+  "homepage": "https://github.com/Molomix/JustAnApp#readme"
+}
