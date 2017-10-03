@@ -14,7 +14,11 @@ test.describe('Including driver',function(){
    });
    test.it('Init driver',function()
    {
-    driver = new webdriver.Builder().forBrowser('Chrome').build();
+    //driver = new webdriver.Builder().forBrowser('Chrome').build();
+    driver = new webdriver.Builder()
+    .forBrowser('firefox')
+    .usingServer('http://localhost:4444/wd/hub')
+    .build();
    });
 });
 
