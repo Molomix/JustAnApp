@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Molomix/JustAnApp#readme",
   "dependencies": {
     "chromedriver": "^2.32.3",
-    "eslint": "^3.1.0",
+    "eslint": ">=4.18.2",
     "geckodriver": "^1.9.0",
     "mocha": "^4.0.0",
     "selenium-server-standalone": "^2.53.1",
